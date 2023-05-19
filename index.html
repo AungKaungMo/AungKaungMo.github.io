@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!----------------------  Font awesome  ------------------------------------->
+
+    <script
+      src="https://kit.fontawesome.com/de471be2d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--------------------------  JQUERY  --------------------------->
+    <script src="../jquery3.6.0.js"></script>
+
+  </head>
+  <body class="overflow-x-hidden bg-skin-backgroundColor text-skin-textColor transition-all duration-500">
+    <!-------------------------  COLOR SETTING BAR  --------------------->
+
+       <div id="openColorSetting" class="bg-skin-boxColor absolute top-0 right-[-200px] transition-all duration-500 opacity-0">
+        <div class="relative p-6">
+        <!-- <iconify-icon id="colseColorSetting" class="absolute top-2 right-2 text-2xl cursor-pointer transform hover:rotate-180 transition duration-150" icon="fa6-solid:xmark"></iconify-icon> -->
+        <div class="bg-[#50C878] changeColorTheme" data-mode="root"></div>
+        <div class="bg-[#537FE7] changeColorTheme" data-mode="darkBlue"></div>
+        <div class="bg-[#FF7B00] changeColorTheme" data-mode="pureOrange"></div>
+      </div>
+    </div>
+
+    <!-------------------------  END COLOR SETTING BAR  --------------------->  
+    <!---------------------------   HEADER   ----------------------------------->
+
+    <div>
+      <div class="navbar flex justify-between mini:mx-28 mx-10">
+        <div class="mt-7">
+          <h1
+            class="text-skin-mainColor font-titleFont mini:text-3xl text-2xl font-bold"
+          >
+            PORTFOLIO
+          </h1>
+        </div>
+        <div>
+          <ul class="font-titleFont secondMini:flex justify-between hidden">
+            <li class="navHover">HOME</li>
+            <li class="mx-7 navHover">ABOUT</li>
+            <li class="navHover">PROJECTS</li>
+            <li class="mx-7 navHover">CONTACT</li>
+            <li class="w-14 h-14 mt-5 cursor-pointer">
+              <iconify-icon icon="uiw:setting" class=" border-2 border-skin-mainColor p-3 rounded-full text-skin-mainColor text-xl bg-skin-boxColor cursor-pointer transform hover:rotate-180 transition-all duration-300 hover:opacity-50 colorSetting"></iconify-icon>
+            </li>
+          </ul>
+        </div>
+
+        <!-------------------------------   RESPONSIVE ICONS   --------------------------->
+        <div class="secondMini:hidden block">
+          <div>
+            <div class="flex">
+              <iconify-icon id="openSideBar" class="mt-7 text-xl mini:mr-7 mr-4 cursor-pointer" icon="fontisto:nav-icon"></iconify-icon>
+            
+              <!-- <span class=" w-6 h-6 mt-4 cursor-pointer"> -->
+                <iconify-icon icon="uiw:setting" class=" border-2 border-skin-mainColor p-3 rounded-full text-skin-mainColor text-xl bg-skin-boxColor cursor-pointer transform hover:rotate-180 transition-all duration-300 hover:opacity-50 mt-4 colorSetting"></iconify-icon>
+              <!-- </span> -->
+            </div>
+
+            <div
+              id="showSideBar"
+              class="z-30 transition-all ease-linear duration-800 absolute top-0 right-[-300px] min-h-screen bg-skin-mainColor p-28"
+            >
+              <!------  Side Bar  ------->
+              <iconify-icon id="closeSideBar" class="absolute top-4 right-6 text-3xl cursor-pointer transform hover:rotate-180 transition duration-150" icon="fa6-solid:xmark"></iconify-icon>
+             
+              <div>
+                <ul class="mt-24">
+                  <li class="navHover hover:text-skin-backgroundColor">HOME</li>
+                  <li class="navHover hover:text-skin-backgroundColor">ABOUT</li>
+                  <li class="navHover hover:text-skin-backgroundColor">PROJECTS</li>
+                  <li class="navHover hover:text-skin-backgroundColor">CONTACT</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------------------   END RESPONSIVE ICONS   --------------------------->
+      </div>
+
+      <div class="w-full h-0.5 bg-skin-mainColor my-4"></div>
+
+      <div class="mini:mx-28 mx-10 font-textFont">
+        <div class="lg:grid lg:grid-cols-2 flex flex-col-reverse">
+          <div class="mini:mt-20 mt-10">
+            <div>Hello, I'm Aung Kaung Moe</div>
+            <div class="mini:text-5xl text-4xl text-skin-mainColor font-bold">
+              Web Developer
+            </div>
+            <div
+              class="mini:mt-16 mt-9 opacity-70 mini:leading-7 leading-6 font-light text-sm tracking-widest"
+            >
+             Hello! I'm Aung Kaung Moe, a junior web develerop. I have a passion for creating websites and a strong foundation in Tailwind, JavaScript, Vue, PHP and Laravel. I'm eager to learn and contribute my skills to help build amazing web experiences. Looking forward to collaborating and growing as a part of a dynamic team!
+            </div>
+            <div class="mt-9">
+              <button class="buttonEff flex items-center">
+                Contact me <iconify-icon icon="material-symbols:perm-phone-msg-rounded" width="28" height="28" class="ml-3"></iconify-icon></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:max-w-6xl sm:w-full mt-12 animate-bouncing lg:ml-7">
+            <img src="../img/header.png" class="lg:max-w-7xl m-auto" />
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <!---------------------------   END HEADER   ----------------------------------->
+
+    <!---------------------------     ABOUT ME    ----------------------->
+
+    <div class="mt-16">
+      <div class="title">
+        About m<span class="text-skin-mainColor">e</span>
+      </div>
+      <div class="lg:grid lg:grid-cols-2 flex flex-col mt-40 mini:mx-28 mx-10">
+        <div class="relative">
+          <div
+            class="w-11/12 h-96 bg-skin-mainColor rounded-lg opacity-30 transform rotate-[-5.14deg] relative left-[-20px] top-[5px]"
+          ></div>
+          <div class="w-11/12 h-96 absolute top-0">
+            <img
+              src="../img/photo_2023-02-13_13-43-32.jpg"
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+        </div>
+        <div class="mt-6">
+          <div class="leading-7 opacity-80">
+          I enjoy bringing designs to life and crafting intuitive user experiences. I love the challenge of solving problems and finding creative solutions to enhance website functionality and performance.
+          During my education and personal projects, I've had the opportunity to work with popular front-end frameworks like Vue.js, as well as gain experience in back-end technologies such as PHP and Laravel. This has allowed me to build dynamic and interactive web applications.
+          I enjoy working alongside designers, UX specialists, and fellow developers to create cohesive and impactful web experiences.If you know more about information, download my cv below.
+          </div>
+          <div class="mt-7">
+            <button class="buttonEff flex items-center">
+              Download CV
+              <iconify-icon icon="material-symbols:cloud-download" width="28" height="28" class="ml-4" ></iconify-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------    SERVICES   -------------------------->
+
+    <div class="mt-24 mini:mx-28 mx-10">
+      <div class="title">What can i do<span>?</span></div>
+      <div class="serviceSlider thirdMini:w-8/12 w-11/12 relative m-auto md:mt-20 mt-32 bg-skin-boxColor shadow-ownShadow rounded-lg h-[300px] cursor-pointer hover:shadow-ownShadowEffect transition-all duration-300">
+        <div class="swiper-wrapper">
+          <div class="slideGroup swiper-slide">
+            <div class="slideIcon">
+              <iconify-icon icon="bi:pc-display-horizontal" class="servicesIcons"></iconify-icon>
+            </div>
+            <div class="slideContent">
+              <div class="slideTitle">
+                Web <span class="text-skin-mainColor">D</span>esign
+              </div>
+              <div class="slideText">
+            With a solid understanding of HTML, CSS, and JavaScript, I combine my technical skills with an eye for aesthetics to design engaging web experiences. I believe that a well-designed website not only looks great but also enhances usability and functionality.
+              </div>
+            </div>
+          </div>
+
+          <div class="slideGroup swiper-slide">
+            <div class="slideIcon">
+              <iconify-icon icon="material-symbols:phone-android" class="servicesIcons"></iconify-icon>
+            </div>
+            <div class="slideContent">
+              <div class="slideTitle">
+                Responsive <span class="text-skin-mainColor">W</span>eb
+                <span class="text-skin-mainColor">D</span>esign
+              </div>
+              <div class="slideText">
+                I'm passionate about staying up to date with the latest trends and best practices in responsive design. I enjoy experimenting with frameworks such as Tailwind and CSS Grid to streamline the development process and enhance the responsiveness of websites.
+              </div>
+            </div>
+          </div>
+
+          <div class="slideGroup swiper-slide">
+            <div class="slideIcon">
+              <iconify-icon icon="ic:baseline-code-off" class="servicesIcons"></iconify-icon>
+            </div>
+            <div class="slideContent">
+              <div class="slideTitle">
+                Clean <span class="text-skin-mainColor">C</span>oding
+              </div>
+              <div class="slideText">
+      I focus on writing clean code, which means organizing and simplifying the code to make it easier to understand and work with. Let's create efficient and reliable websites together!
+              </div>
+            </div>
+          </div>
+
+          <div class="slideGroup swiper-slide">
+            <div class="slideIcon">
+              <iconify-icon icon="ic:outline-access-time" class="servicesIcons"></iconify-icon>
+            </div>
+            <div class="slideContent">
+              <div class="slideTitle">
+                Time <span class="text-skin-mainColor">M</span>anagement
+              </div>
+              <div class="slideText">
+                I know how to prioritize tasks and meet deadlines in a fast-paced environment.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="slider__pagination md:ml-4 absolute md:!w-0 md:left-auto md:bottom-[unset] md:top-[22%] md:transform md:translate-y-[50%] md:right-7 md:inline z-30 flex justify-center my-3"
+        ></div>
+      </div>
+    </div>
+
+    <!------------------------    END SERVICES   -------------------------->
+
+    <!------------------------   SKILLS SET   -------------------------->
+
+    <div class="mt-20 mini:mx-28 mx-10">
+      <div class="title">SKILL<span class="text-skin-mainColor">S</span></div>
+      <div class="mt-20 font-textFont secondMini:grid grid-cols-2 gap-16">
+        <div>
+          <!----  left  ---->
+          <div class="mb-10">
+            <div class="skillTitle">HTML</div>
+            <div class="skillBgBar">
+              <div class="w-[90%] skillBar">
+                <span class="skillPercentage">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div class="skillTitle">BS/ TAILWIND</div>
+            <div class="skillBgBar">
+              <div class="w-[75%] skillBar">
+                <span class="skillPercentage">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div class="skillTitle">JQUERY</div>
+            <div class="skillBgBar">
+              <div class="w-[70%] skillBar">
+                <span class="skillPercentage">70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div class="skillTitle">VUE JS</div>
+            <div class="skillBgBar">
+              <div class="w-[75%] skillBar">
+                <span class="skillPercentage">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div class="skillTitle">JAVA SE</div>
+            <div class="skillBgBar">
+              <div class="w-[35%] skillBar">
+                <span class="skillPercentage">35%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!----  right  ---->
+          <div class="mb-10">
+            <div class="skillTitle">CSS</div>
+            <div class="skillBgBar">
+              <div class="w-[80%] skillBar">
+                <span class="skillPercentage">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div class="skillTitle">JAVASCRIPT</div>
+            <div class="skillBgBar">
+              <div class="w-[75%] skillBar">
+                <span class="skillPercentage">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div class="skillTitle">FIGMA</div>
+            <div class="skillBgBar">
+              <div class="w-[65%] skillBar">
+                <span class="skillPercentage">65%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div class="skillTitle">PHP</div>
+            <div class="skillBgBar">
+              <div class="w-[70%] skillBar">
+                <span class="skillPercentage">70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-10">
+            <div class="skillTitle">LARAVEL</div>
+            <div class="skillBgBar">
+              <div class="w-[75%] skillBar">
+                <span class="skillPercentage">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------   END SKILLS SET   -------------------------->
+
+    <!---------------------------   END ABOUT ME    ----------------------->
+
+    <!---------------------------   PROJECTS    ---------------------------->
+
+    <div class="mt-20 mini:mx-28 mx-10">
+      <div class="title">
+        My Project<span class="text-skin-mainColor">s</span>
+      </div>
+      <div class="w-full bg-skin-boxColor relative overflow-hidden mt-20 rounded-md font-textFont">
+        <div class="w-full py-6 bg-skin-boxColor rounded-t-md flex justify-center fourthMini:gap-14 gap-4 shadow-md" >
+          <div class="font-semibold tracking-wide text-skin-mainColor cursor-pointer" id="website">
+            Websites
+          </div>
+          <div class="w-1 h-5 bg-white"></div>
+          <div class="tracking-wide cursor-pointer" id="miniGame">Mini Games</div>
+        </div>
+
+        <div class="grid xl:grid-cols-2 grid-cols-1 pb-12" id="web">
+          <div class="projectContainer">
+            <div class="projectImageContainer">
+              <img src="../img/musicweb.jpg" class="projectImage" />
+              <div class="absolute top-[50%] left-[50%]">
+                <iconify-icon icon="ic:baseline-remove-red-eye" class="projectViewIcon" data-image="../img/musicweb.jpg"></iconify-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="projectContainer">
+            <div class="projectImageContainer">
+              <img src="../img/gweb.jpg" class="projectImage" />
+              <div class="absolute top-[50%] left-[50%]">
+                <iconify-icon icon="ic:baseline-remove-red-eye" class="projectViewIcon" data-image="../img/gweb.jpg"></iconify-icon>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="projectContainer">
+            <div class="projectImageContainer">
+              <img src="../img/fweb.png" class="projectImage" />
+              <div class="absolute top-[50%] left-[50%]">
+                <iconify-icon icon="ic:baseline-remove-red-eye" class="projectViewIcon" data-image="../img/fweb.png"></iconify-icon>
+              </div>
+            </div>
+          </div> -->
+
+         <div class="projectContainer">
+            <div class="projectImageContainer">
+              <img src="../img/cafe.jpg" class="projectImage" />
+              <div class="absolute top-[50%] left-[50%]">
+                <iconify-icon icon="ic:baseline-remove-red-eye" class="projectViewIcon" data-image="../img/cafe.jpg"></iconify-icon>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="grid xl:grid-cols-2 grid-cols-1 pb-12 hidden" id="game">
+        <div class="projectContainer">
+          <div class="projectImageContainer">
+            <img src="../img/banana.png" class="projectImage" />
+            <div class="absolute top-[50%] left-[50%]">
+              <iconify-icon icon="ic:baseline-remove-red-eye" class="projectViewIcon" data-image="../img/banana.png"></iconify-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectContainer">
+          <div class="projectImageContainer">
+            <img src="../img/bingobg.jpg" class="projectImage" />
+            <div class="absolute top-[50%] left-[50%]">
+              <iconify-icon icon="ic:baseline-remove-red-eye" class="projectViewIcon" data-image="../img/bingobg.jpg"></iconify-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectContainer">
+          <div class="projectImageContainer">
+            <img src="../img/word.png" class="projectImage" />
+            <div class="absolute top-[50%] left-[50%]">
+              <iconify-icon icon="ic:baseline-remove-red-eye" class="projectViewIcon" data-image="../img/word.png"></iconify-icon>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="back" class="w-full absolute top-0 transition-all duration-1000 transform showProject bg-skin-boxColor fourthMini:h-full h-auto">
+        <div class="opacity-0 transition-all duration-500"  id="backContent">
+       
+    </div>
+  </div>
+      
+
+    </div>
+
+    </div>
+
+    <!---------------------------   END PROJECTS    ---------------------------->
+
+    <!---------------------------   TESTIMONIALS   ----------------------------->
+
+        <div class="md:mt-48 mt-24 mini:mx-28 mx-10 font-textFont">
+          <div class="xl:w-10/12 xl:m-auto w-full md:bg-skin-boxColor rounded-md h-72 relative lg:grid grid-cols-2 ">
+
+            <div>
+            <div class="md:absolute top-[-80px] lg:left-[-95px] lg:m-0 right-0 left-0 m-auto p-5 rounded-md md:max-w-md  bg-skin-boxColor shadow-ownShadow"><!------ REVIEW BOX  ------->
+             
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+              <div class="fourthMini:flex justify-between">
+                <div class="flex items-center">
+                <div class="fifthMini:w-20 fifthMini:h-20 w-14 h-14 rounded-full"><img src="../img/cus1.jpg" class="w-full h-full  object-cover rounded-full"></div>
+                <div class="ml-3">
+                  <div class=" fifthMini:text-xl text-lg">Dr. John zeli</div>
+                  <div class="text-sm opacity-70"> New York</div>
+                </div>
+              </div>
+                <div class="text-skin-mainColor mt-4">
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                </div>
+              </div>
+              
+              <div class="mt-9 mb-4 opacity-80 leading-7 text-sm ">
+                Lörem ipsum tetralig deberat neted betäling.
+                soledes. Dipöss syktiga vadade. Gåggin 
+                Födade renovräkning higa vadade. Gåggin 
+                Födade renovräkning h.
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="fourthMini:flex justify-between">
+                <div class="flex items-center">
+                <div class="fifthMini:w-20 fifthMini:h-20 w-14 h-14 rounded-full"><img src="../img/cus1.jpg" class="w-full h-full  object-cover rounded-full"></div>
+                <div class="ml-3">
+                  <div class=" fifthMini:text-xl text-lg">Dr. John zeli</div>
+                  <div class="text-sm opacity-70"> New York</div>
+                </div>
+              </div>
+                <div class="text-skin-mainColor mt-4">
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                </div>
+              </div>
+              
+              <div class="mt-9 mb-4 opacity-80 leading-7 text-sm ">
+                Lörem ipsum tetralig deberat neted betäling.
+                soledes. Dipöss syktiga vadade. Gåggin 
+                Födade renovräkning higa vadade. Gåggin 
+                Födade renovräkning h.
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="fourthMini:flex justify-between">
+                <div class="flex items-center">
+                <div class="fifthMini:w-20 fifthMini:h-20 w-14 h-14 rounded-full"><img src="../img/cus2.jpg" class="w-full h-full  object-cover rounded-full"></div>
+                <div class="ml-3">
+                  <div class=" fifthMini:text-xl text-lg">Dr. John zeli</div>
+                  <div class="text-sm opacity-70"> New York</div>
+                </div>
+              </div>
+                <div class="text-skin-mainColor mt-4">
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-rounded" width="24" height="24"></iconify-icon>
+                </div>
+              </div>
+              
+              <div class="mt-9 mb-4 opacity-80 leading-7 text-sm ">
+                Lörem ipsum tetralig deberat neted betäling.
+                soledes. Dipöss syktiga vadade. Gåggin 
+                Födade renovräkning higa vadade. Gåggin 
+                Födade renovräkning h.
+              </div>
+            </div>
+
+
+              </div>
+            </div>
+            <div class="swiper-pagination bottom-[-40px] testimonial"></div>
+            
+          </div>
+         
+        </div>
+
+            <div class=" mt-16 relative lg:block hidden"><!------ RIGHT SIDE ------->
+              <div class="title after:w-44 text-start after:m-0">
+                TESTIMONIALS
+              </div>
+              <div class="flex mt-9 items-center">
+                <iconify-icon icon="material-symbols:arrow-back" class="text-7xl text-skin-mainColor mr-3"></iconify-icon>
+                <div>Client<span class="text-skin-mainColor">'s</span> reviews</div>
+              </div>
+              <div class="absolute top-[-120px] right-[-130px]">
+                <img src="../img/fortesti.png">
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!---------------------------  END TESTIMONIALS   ----------------------------->
+
+    <!---------------------------  CONTACT   ----------------------------->
+
+        <div class="mt-40  mini:mx-28 mx-10 font-textFont">
+          <div class="title">Contact</div>
+          <div class="mt-20 lg:w-10/12 w-full m-auto md:grid grid-cols-2">
+            <div cla><!------ Left ------->
+              <div class="font-titleFont text-4xl font-bold">Let'<span class="text-skin-mainColor">s</span> work together</div>
+              <div class="opacity-60 text-sm mt-1">Here is my contact informations.</div>
+              <div class="mt-12 ">
+                <div class="py-5 fourthMini:w-72 w-full bg-skin-boxColor rounded-lg flex items-center justify-center">
+                  <iconify-icon icon="ic:round-email" class="text-2xl text-skin-mainColor mr-4"></iconify-icon>
+                  <h2>moea74759@gmail.com</h2>
+                </div>
+                <div class="py-5 fourthMini:w-72 w-full bg-skin-boxColor rounded-lg flex items-center justify-center mt-8">
+                  <iconify-icon icon="material-symbols:perm-phone-msg-rounded" class="text-2xl text-skin-mainColor mr-4"></iconify-icon>
+                  <h2>+959 956 459 552</h2>
+                </div>
+              </div>
+              <div class="mt-12 flex text-4xl text-skin-mainColor">
+                <!-- <iconify-icon icon="ic:baseline-facebook" class="iconEff"></iconify-icon> -->
+                <!-- <iconify-icon icon="mdi:instagram" class="iconEff"></iconify-icon> -->
+                <iconify-icon icon="mdi:github" class="iconEff"></iconify-icon>
+                <!-- <iconify-icon icon="mdi:linkedin" class="iconEff"></iconify-icon> -->
+              </div>
+            </div>
+            <!------ Right ------>
+            <!-- <div class="md:ml-14 md:mt-1 mt-12">
+              <div>
+                <label class="">NAME</label><br>
+                <input type="text" class="formInputSend">
+              </div>
+              <div class="mt-7">
+                <label>EMAIL</label><br>
+                <input type="text" class="formInputSend">
+              </div>
+              <div class="mt-7">
+                <label>MESSAGE</label><br>
+                <textarea class="formInputSend"></textarea>
+              </div>
+              <div class="mt-7">
+                <button class="py-3 px-6 w-32 buttonEff">Send</button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+    <!---------------------------  END CONTACT   ----------------------------->
+
+    <!------------------  FOOTER  ------------------>
+        <div class="mt-20">
+          <div class="font-semibold text-center py-7 bg-skin-boxColor">2023@ Copy right design by Aung Kaung Moe</div>
+        </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+
+    <script>
+      var swiper = new Swiper(".serviceSlider", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        // mousewheel: {
+        //   invert: false,
+        // },
+        // autoHeight: true,
+        pagination: {
+          el: ".slider__pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+  </body>
+</html>
